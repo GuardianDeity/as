@@ -1,0 +1,77 @@
+Inventory
+├── Application
+│   ├── ACL
+│   │   └── InventoryContextFacade.cs
+│   └── Internal
+│       ├── CommandServices
+│       └── QueryServices
+├── Domain
+│   ├── Model
+│   │   ├── Aggregates
+│   │   ├── Commands
+│   │   ├── Entities
+│   │   ├── Queries
+│   │   └── ValueObjects
+│   ├── Repositories
+│   └── Services
+├── Infrastructure
+│   └── Persistence
+│       └── EFC
+│           └── Repositories
+├── Interfaces
+│   ├── ACL
+│   │   └── IInventoryContextFacade.cs
+│   └── REST
+│       ├── Resources
+│       └── InventoryController.cs
+
+Observability
+├── Application
+│   ├── ACL
+│   │   └── ObservabilityContextFacade.cs
+│   └── Internal
+│       ├── CommandServices
+│       └── QueryServices
+├── Domain
+│   ├── Model
+│   │   ├── Aggregates
+│   │   ├── Commands
+│   │   ├── Entities
+│   │   ├── Queries
+│   │   └── ValueObjects
+│   ├── Repositories
+│   └── Services
+├── Infrastructure
+│   └── Persistence
+│       └── EFC
+│           └── Repositories
+├── Interfaces
+│   ├── ACL
+│   │   └── IObservabilityContextFacade.cs
+│   └── REST
+│       ├── Resources
+│       └── ObservabilityController.cs
+
+Shared
+├── Domain
+│   ├── Repositories
+│   │   ├── IBaseRepository.cs
+│   │   └── IUnitOfWork.cs
+├── Infrastructure
+│   ├── Interfaces
+│   │   └── ASP
+│   │       └── Configuration
+│   │           └── Extensions
+│   │               ├── StringExtensions.cs
+│   │               └── KebabCaseRouteNamingConvention.cs
+│   └── Persistence
+│       ├── EFC
+│       │   └── Configuration
+│       │       └── Extensionas
+│       │           ├── ModelBuilderExtensions.cs
+│       │           ├── StringExtensions.cs
+│       │           └── AppDbContext.cs
+│       └── Repositories
+│           ├── BaseRepository.cs
+│           └── UnitOfWork.cs
+
